@@ -25,29 +25,34 @@ class OnBoardingAnimationExample extends StatefulWidget {
   const OnBoardingAnimationExample({Key? key}) : super(key: key);
 
   @override
-  State<OnBoardingAnimationExample> createState() => _OnBoardingAnimationExampleState();
+  State<OnBoardingAnimationExample> createState() =>
+      _OnBoardingAnimationExampleState();
 }
 
-class _OnBoardingAnimationExampleState extends State<OnBoardingAnimationExample> {
+class _OnBoardingAnimationExampleState
+    extends State<OnBoardingAnimationExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white.withOpacity(.9),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
+      body: const Padding(
+        padding: EdgeInsets.all(8.0),
         child: OnBoardingAnimation(
           pages: [
             _GetCardsContent(
               image: 'assets/images/image_1.jpg',
-              cardContent: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+              cardContent:
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
             ),
             _GetCardsContent(
               image: 'assets/images/image_2.jpg',
-              cardContent: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+              cardContent:
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
             ),
             _GetCardsContent(
               image: 'assets/images/image_3.jpg',
-              cardContent: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+              cardContent:
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
             ),
           ],
           indicatorDotHeight: 7.0,

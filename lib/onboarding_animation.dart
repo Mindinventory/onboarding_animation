@@ -86,7 +86,8 @@ class OnBoardingAnimation extends StatefulWidget {
   final DotDecoration? indicatorActiveDotDecoration;
 
   /// This parameter is use to override the existing active and inactive colors.
-  final ColorBuilder? indicatorActiveColorOverride, indicatorInActiveColorOverride;
+  final ColorBuilder? indicatorActiveColorOverride,
+      indicatorInActiveColorOverride;
 
   const OnBoardingAnimation({
     required this.pages,
@@ -161,8 +162,12 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
                   return TweenAnimationBuilder(
                     duration: const Duration(milliseconds: 140),
                     tween: Tween<double>(
-                      begin: ((((index - indexValue) * 100.0) * ((index - indexValue).abs() / 40)) / 100.0),
-                      end: ((((index - indexValue) * 100.0) * ((index - indexValue).abs() / 40)) / 100.0),
+                      begin: ((((index - indexValue) * 100.0) *
+                              ((index - indexValue).abs() / 40)) /
+                          100.0),
+                      end: ((((index - indexValue) * 100.0) *
+                              ((index - indexValue).abs() / 40)) /
+                          100.0),
                     ),
                     builder: (_, double rotation, _child) {
                       return Transform(
