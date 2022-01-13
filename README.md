@@ -152,6 +152,7 @@ It would be great for us if the reporter can share the below things to understan
 <br />
 
 # LICENSE!
+OnBoarding Animation is [MIT-licensed](https://github.com/mi-ghanshyam/onboarding_animation/blob/master/LICENSE "MIT-licensed").
 
 <br />
 

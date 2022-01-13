@@ -227,7 +227,7 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
     }
   }
 
-  /// This method is use to select the type of the indicator from the [SmoothPageIndicator].
+  /// This method is use to select the type of indicator from the [SmoothPageIndicator].
   dynamic _getIndicatorType() {
     switch (widget.indicatorType) {
       case IndicatorType.worm:
