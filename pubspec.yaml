@@ -1,7 +1,7 @@
 name: onboarding_animation
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/mi-ghanshyam/onboarding_animation
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
