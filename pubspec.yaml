@@ -1,5 +1,5 @@
 name: onboarding_animation
-description: A new Flutter project.
+description: This package provides page type animation to onboarding screens and provides indicator.
 version: 0.0.1
 homepage: https://github.com/mi-ghanshyam/onboarding_animation
 
