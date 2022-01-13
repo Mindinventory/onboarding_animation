@@ -7,6 +7,7 @@ OnBoarding Animation provides page like animation to the onBoarding screens with
 <br />
 
 ## Screenshots and Screen recording
+![OnBoarding Animation](https://github.com/mi-ghanshyam/onboarding_animation/blob/master/assets/onboarding_animation.gif)
 
 <br />
 
