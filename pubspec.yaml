@@ -1,7 +1,7 @@
 name: onboarding_animation
 description: This package provides page type animation to onboarding screens and provides indicator.
 version: 0.0.2
-repository: https://github.com/mi-ghanshyam/onboarding_animation
+repository: https://github.com/Mindinventory/onboarding_animation
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
