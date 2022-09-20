@@ -48,6 +48,10 @@ import 'package:onboarding_animation/onboarding_animation.dart';
 
 ### Optional Parameters
 
+### controller:
+
+- This parameter is use to set the page controller.
+
 #### indicatorOffset:
 - This parameter is used to set the offset of the indicator.
 
