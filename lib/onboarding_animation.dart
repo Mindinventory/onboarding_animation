@@ -137,7 +137,7 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
   void initState() {
     super.initState();
     _pageController = widget.controller ?? PageController(initialPage: 0);
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance?.addPostFrameCallback((_) {
       _pageIndex.value = _pageController.page ?? 0;
       _pageController.addListener(_listener);
 
