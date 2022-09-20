@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:onboarding_animation/onboarding_animation.dart';
@@ -35,9 +33,10 @@ class _OnBoardingAnimationExampleState
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white.withOpacity(.9),
-      body: const Padding(
+      body: Padding(
         padding: EdgeInsets.all(8.0),
         child: OnBoardingAnimation(
+          controller: PageController(initialPage: 1),
           pages: [
             _GetCardsContent(
               image: 'assets/images/image_1.jpg',

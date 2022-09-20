@@ -8,6 +8,9 @@ class OnBoardingAnimation extends StatefulWidget {
   /// This parameter is required. need to provide list of [Widget] user wants to show on onBoarding.
   final List<Widget> pages;
 
+  /// This parameter is use to set the page controller.
+  final PageController? controller;
+
   /// This parameter is used to set the offset of the indicator.
   final double indicatorOffset;
 
@@ -91,6 +94,7 @@ class OnBoardingAnimation extends StatefulWidget {
 
   const OnBoardingAnimation({
     required this.pages,
+    this.controller,
     this.indicatorOffset = 10.0,
     this.indicatorDotWidth = 10.0,
     this.indicatorDotHeight = 10.0,
@@ -125,15 +129,18 @@ class OnBoardingAnimation extends StatefulWidget {
 }
 
 class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
-  final PageController _pageController = PageController(initialPage: 0);
+  late PageController _pageController;
   final ValueNotifier<double> _pageIndex = ValueNotifier(0.0);
 
   /// Initialize the listener to add page listener.
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    _pageController = widget.controller ?? PageController(initialPage: 0);
+    WidgetsBinding.instance?.addPostFrameCallback((_) {
+      _pageIndex.value = _pageController.page ?? 0;
       _pageController.addListener(_listener);
+
     });
   }
 
@@ -180,11 +187,13 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
                     },
                   );
                 },
-                onPageChanged: (index) => _pageIndex.value = index.toDouble(),
+                // onPageChanged: (index) => _pageIndex.value = index.toDouble(),
               );
             },
             valueListenable: _pageIndex,
           ),
+
+
           Align(
             alignment: _getIndicatorPosition()!,
             child: SmoothPageIndicator(
