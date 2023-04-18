@@ -1,8 +1,8 @@
 library onboarding_animation;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+export 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingAnimation extends StatefulWidget {
   /// This parameter is required. need to provide list of [Widget] user wants to show on onBoarding.
@@ -140,7 +140,6 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _pageIndex.value = _pageController.page ?? 0;
       _pageController.addListener(_listener);
-
     });
   }
 
@@ -192,8 +191,6 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
             },
             valueListenable: _pageIndex,
           ),
-
-
           Align(
             alignment: _getIndicatorPosition()!,
             child: SmoothPageIndicator(

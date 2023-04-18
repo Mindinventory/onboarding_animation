@@ -34,10 +34,10 @@ class _OnBoardingAnimationExampleState
     return Scaffold(
       backgroundColor: Colors.white.withOpacity(.9),
       body: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: OnBoardingAnimation(
           controller: PageController(initialPage: 1),
-          pages: [
+          pages: const [
             _GetCardsContent(
               image: 'assets/images/image_1.jpg',
               cardContent:
@@ -58,6 +58,7 @@ class _OnBoardingAnimationExampleState
           indicatorDotWidth: 7.0,
           indicatorType: IndicatorType.expandingDots,
           indicatorPosition: IndicatorPosition.bottomCenter,
+          indicatorSwapType: SwapType.normal,
         ),
       ),
     );
