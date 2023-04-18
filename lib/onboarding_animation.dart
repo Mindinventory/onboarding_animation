@@ -1,8 +1,8 @@
 library onboarding_animation;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+export 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingAnimation extends StatefulWidget {
   /// This parameter is required. need to provide list of [Widget] user wants to show on onBoarding.
