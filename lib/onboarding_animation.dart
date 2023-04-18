@@ -140,7 +140,6 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _pageIndex.value = _pageController.page ?? 0;
       _pageController.addListener(_listener);
-
     });
   }
 
@@ -192,8 +191,6 @@ class _OnBoardingAnimationState extends State<OnBoardingAnimation> {
             },
             valueListenable: _pageIndex,
           ),
-
-
           Align(
             alignment: _getIndicatorPosition()!,
             child: SmoothPageIndicator(
