@@ -32,7 +32,7 @@ class _OnBoardingAnimationExampleState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: Colors.white.withValues(alpha: .9),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: OnBoardingAnimation(

@@ -1,10 +1,10 @@
 name: onboarding_animation
 description: This package provides page type animation to onboarding screens and provides indicator.
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/Mindinventory/onboarding_animation
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=3.10.0 <4.0.0'
 
 dependencies:
   flutter:

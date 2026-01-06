@@ -1,3 +1,7 @@
+## [0.0.4] - 2026-01-06
+
+* Updated library details and Flutter version.
+
 ## [0.0.3] - 2023-04-18
 
 * Provided the accessibility of all the properties of smooth_page_indicator.
